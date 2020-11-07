@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const courses1 = [
+const courses = [
 
     {
         courseName: "Diploma in Computer Application (DCA)",
@@ -42,12 +42,7 @@ const courses1 = [
         courseDescription: ["Include of CCA", "HTML5+CSS3+JS", "PHP/JSP/ASP", "CMS (WP/JUMLA)", "6 month Free (1 Domain+Hosting)"],
         courseDuraton: "6",
         fees: "8000",
-    }
-
-]
-
-const courses2 = [
-
+    },
     {
         courseName: "Mobile App Development",
         imgUrl: "/app-dev.svg",
@@ -68,10 +63,7 @@ const courses2 = [
         courseDescription: ["Include of CCA", "Fundamental of Editing", "Live Project handling(wedding)", "FCP/EdiusX/premire pro"],
         courseDuraton: "6",
         fees: "15000",
-    }
-]
-
-const courses3 = [
+    },
     {
         courseName: "AutoCAD Designing",
         imgUrl: "/autoCade.svg",
@@ -79,6 +71,7 @@ const courses3 = [
         courseDuraton: "6",
         fees: "8000",
     }
+
 ]
 
 function CourseSection(props) {
@@ -90,23 +83,9 @@ function CourseSection(props) {
             </div>
             <Grid>
                 <Grid container >
-                    {courses1.map((item) => (
-                        <Grid item xs={12} sm={4}>
-                            <CourseCard data={item} key={item.courseName} />
-                        </Grid>
-                    ))}
-                </Grid>
-                <Grid container >
-                    {courses2.map((item) => (
-                        <Grid item xs={12} sm={4}>
-                            <CourseCard data={item} key={item.courseName} />
-                        </Grid>
-                    ))}
-                </Grid>
-                <Grid container >
-                    {courses3.map((item) => (
-                        <Grid item xs={12} sm={4}>
-                            <CourseCard data={item} key={item.courseName} />
+                    {courses.map((item) => (
+                        <Grid item xs={12} sm={4} key={item.courseName} >
+                            <CourseCard data={item} />
                         </Grid>
                     ))}
                 </Grid>

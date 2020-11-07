@@ -1,5 +1,6 @@
-const { default: Footer } = require("./footer");
-const { default: Header } = require("./header");
+import Footer from "./footer";
+import Header from "./header";
+
 
 export default function Layout(props) {
     return (

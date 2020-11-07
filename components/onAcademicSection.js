@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     margin: 10,
     height: 200,
     backgroundColor: "#f5f5f5",
-    width: 500,
+    // width: 500,
     marginLeft: 40
   },
   heading: {

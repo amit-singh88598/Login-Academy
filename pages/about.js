@@ -30,8 +30,8 @@ function About() {
         <div className={classes.introSection}>
           <h1 className={classes.headng}>INTRODUCTION</h1>
           <Divider />
-          <Typography>
-            <ul>Now we are in an era of computers and it is very likely that you must either learnt them as a professional course or used casually. Either ways, computers have truely transformed the the world operates, Personal with a knowledge of Computers are greate demand all over the and get top mostpriority for going abroad. without a computer literacy or computer background , no one can be supposed to be graduated or educated now a days, so LOGIN ACADEMY has been established to emerge your power of knowlwdge as well as develop your career which helps you to seek new opportunities in the world's market.</ul>
+          <Typography component="p">
+            Now we are in an era of computers and it is very likely that you must either learnt them as a professional course or used casually. Either ways, computers have truely transformed the the world operates, Personal with a knowledge of Computers are greate demand all over the and get top mostpriority for going abroad. without a computer literacy or computer background , no one can be supposed to be graduated or educated now a days, so LOGIN ACADEMY has been established to emerge your power of knowlwdge as well as develop your career which helps you to seek new opportunities in the world's market.
           </Typography>
         </div>
       </div>
@@ -40,4 +40,3 @@ function About() {
 }
 
 export default About
-k

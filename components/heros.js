@@ -46,14 +46,14 @@ function Heros(props) {
                         <h1 className={custom.h1}>Expand your horizons and pave the way for the future!
                </h1>
 
-                        <Button onClick={() => router.push("/courses")} color="secondary" variant="contained" style={{ borderRadius: 20 }} endIcon={<ArrowForward color="white" />}>Our Courses</Button>
+                        <Button onClick={() => router.push("/courses")} color="secondary" variant="contained" style={{ borderRadius: 20 }} endIcon={<ArrowForward />}>Our Courses</Button>
                     </div>
                 </Card>
             </Grid>
             <Grid item xs={12} sm={6} >
                 <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
 
-                    <img src="/hero.svg" height="300" />
+                    <img src="/hero.svg" height="300" alt="hero images"/>
                 </div>
             </Grid>
         </Grid>

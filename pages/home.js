@@ -67,13 +67,13 @@ function Home() {
   const classes = useStyles();
   return (
     <Layout >
-      <div calsssName={classes.root}>
+      <div className={classes.root}>
         <Heros />
         <div className={classes.introSection}>
           <h1 className={classes.headng}>INTRODUCTION</h1>
           <Divider />
-          <Typography>
-            <ul>Now we are in an era of computers and it is very likely that you must either learnt them as a professional course or used casually. Either ways, computers have  truely transformed the the world operates</ul>
+          <Typography variant="h6">
+            Now we are in an era of computers and it is very likely that you must either learnt them as a professional course or used casually. Either ways, computers have  truely transformed the the world operates
           </Typography>
         </div>
 

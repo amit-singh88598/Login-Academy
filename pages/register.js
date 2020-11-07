@@ -228,9 +228,7 @@ const coursesList = [
 
 function Register() {
   const classes = useStyles();
-  const [course, setCourse] = useState("Select")
-  const bull = <span className={classes.bullet}>•</span>;
-  const [age, setAge] = React.useState('');
+  const [course, setCourse] = useState("")
   return (
     <Layout>
       <div>
@@ -248,13 +246,13 @@ function Register() {
               <Card className={classes.formCard} elevation={0}>
                 <Grid container>
                   <Grid item xs={12} sm={12}>
-                    <TextField label="Full Name" id="outlined-basic" variant="outlined" fullWidth />
+                    <TextField label="Full Name"  variant="outlined" fullWidth />
                   </Grid>
                   <Grid item xs={12} sm={12}>
-                    <TextField label="Email" id="outlined-basic" variant="outlined" fullWidth className={classes.TextField} />
+                    <TextField label="Email"  variant="outlined" fullWidth className={classes.TextField} />
                   </Grid>
                   <Grid item xs={12} sm={12}>
-                    <TextField label="Mobile" id="outlined-basic" variant="outlined" fullWidth />
+                    <TextField label="Mobile"  variant="outlined" fullWidth />
                   </Grid>
                   <Grid item xs={12} sm={12}>
                     <TextField

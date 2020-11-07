@@ -48,15 +48,16 @@ export default function CourseCard(props) {
         <Typography gutterBottom variant="h6" >
           {props.data.courseName}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography  color="textSecondary" component={'span'} variant="body2">
           {props.data.courseDescription.map((item) => (
-            <Typography key={item}><Icon style={{ color: "green" }}><CheckCircleOutline /></Icon> {item}</Typography>
+            <Typography key={item} component={'p'} ><Icon style={{ color: "green",alignItems:"center" }}><CheckCircleOutline /></Icon> {item}</Typography>
+            
           ))}
         </Typography>
         <Chip className={classes.cardChip} label={"Duraton " + props.data.courseDuraton + " Month" + " | " + "Fees" + " " + "NPR " + props.data.fees} color="secondary" />
 
         <div >
-          <Button className={classes.btnregister} color="primary" onClick={() => router.push("/register")} variant="outlined" endIcon={<ArrowForward color="white" />}>Register</Button>
+          <Button className={classes.btnregister} color="primary" onClick={() => router.push("/register")} variant="outlined" endIcon={<ArrowForward  />}>Register</Button>
         </div>
       </CardContent>
     </Card>

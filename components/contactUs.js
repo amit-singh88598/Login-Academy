@@ -44,13 +44,13 @@ function ContactUs() {
         <Card className={classes.root} elevation={0}>
           <Grid container>
             <Grid item xs={12} sm={12}>
-              <TextField label="Full Name" id="outlined-basic" variant="outlined" fullWidth />
+              <TextField label="Full Name"  variant="outlined" fullWidth />
             </Grid>
             <Grid item xs={12} sm={12}>
-              <TextField label="Email" id="outlined-basic" variant="outlined" fullWidth className={classes.TextField} />
+              <TextField label="Email"  variant="outlined" fullWidth className={classes.TextField} />
             </Grid>
             <Grid item xs={12} sm={12}>
-              <TextField label="Mobile" id="outlined-basic" variant="outlined" fullWidth />
+              <TextField label="Mobile"  variant="outlined" fullWidth />
             </Grid>
             <Grid item xs={12} sm={12}>
               <Button size="small" color="primary" variant="contained" fullWidth className={classes.contantFormBtn}>Get In Touch</Button>
@@ -60,7 +60,7 @@ function ContactUs() {
         </Card>
       </Grid>
       <Grid item xs={12} sm={6}>
-        <img src="/autoCade.svg" height="290" />
+        <img src="/autoCade.svg" height="290" width="500" />
       </Grid>
     </Grid>
 

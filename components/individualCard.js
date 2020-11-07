@@ -192,7 +192,7 @@ const courses = [
         fees: "6000",
     },
     {
-        courseName: "Spoken English",
+        courseName: "Spoken English (Complete)",
         courseDuraton: "3",
         fees: "5000",
     },
@@ -213,8 +213,8 @@ function IndividualCard(props) {
             <Grid>
                 <Grid container >
                     {courses.map((item) => (
-                        <Grid item xs={12} sm={3}>
-                            <CardIndividual data={item} key={item.courseName} />
+                        <Grid item xs={12} sm={3} key={item.courseName}>
+                            <CardIndividual data={item}  />
                         </Grid>
                     ))}
                 </Grid>

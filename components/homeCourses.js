@@ -57,14 +57,14 @@ function HomeCourses(props) {
             <Divider />
             <Grid container >
                 {courses.map((item) => (
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} sm={4} key={item.courseName}>
                         <CourseCard data={item} key={item.courseName} />
                     </Grid>
 
                 ))}
             </Grid>
             <div className={classes.btnMore}>
-                <Button onClick={() => router.push("/courses")} color="white" variant="outlined" endIcon={<ArrowForward color="white" />}>More Courses</Button>
+                <Button onClick={() => router.push("/courses")} variant="outlined" endIcon={<ArrowForward  />}>More Courses</Button>
             </div>
         </Grid>
 
