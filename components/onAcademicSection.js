@@ -9,7 +9,7 @@ const data = [
   },
   {
     heading: "Curriculum",
-    description: ["Weekend Exam Program", "Quiz Program", "Webinar", "Motivation Class"]
+    description: ["Weekend Exam Program", "Quiz Program", "Webinar", "Motivation Class"," - "," - "]
   },
 
 
@@ -17,10 +17,7 @@ const data = [
 const useStyles = makeStyles({
   root: {
     margin: 10,
-    height: 200,
     backgroundColor: "#f5f5f5",
-    // width: 500,
-    marginLeft: 40
   },
   heading: {
     textAlign: "center",
@@ -51,7 +48,6 @@ function OnAcademicSection(props) {
               </CardActionArea>
             </Card>
           </Grid>
-
         ))}
       </Grid>
     </div>

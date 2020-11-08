@@ -5,7 +5,6 @@ import ReactCardCarousel from 'react-card-carousel';
 import Link from "next/link";
 import { useRouter } from 'next/router'
 import { ArrowForward } from "@material-ui/icons";
-import custom from '../styles/mystyle.module.css';
 
 
 const useStyle = makeStyles((theme) => ({
@@ -18,7 +17,7 @@ const useStyle = makeStyles((theme) => ({
         padding: 30,
     },
     sloganCard: {
-
+         textAlign: "center",
         backgroundColor: theme.palette.primary.background,
         color: "white"
     },
@@ -31,6 +30,11 @@ const useStyle = makeStyles((theme) => ({
     media: {
         height: 300,
     },
+   sloganText:{
+        [theme.breakpoints.down('sm')]:{
+      fontSize:'1.5em',
+    }
+   }
 
 }))
 
@@ -41,9 +45,9 @@ function Heros(props) {
 
         <Grid container item className={classes.root}>
             <Grid item xs={12} sm={6}>
-                <Card className={classes.content} elevation={0} className={classes.sloganCard}>
-                    <div className={custom.heroHeading}>
-                        <h1 className={custom.h1}>Expand your horizons and pave the way for the future!
+                <Card elevation={0} className={classes.sloganCard}>
+                    <div >
+                        <h1 className={classes.sloganText}>Expand your horizons and pave the way for the future!
                </h1>
 
                         <Button onClick={() => router.push("/courses")} color="secondary" variant="contained" style={{ borderRadius: 20 }} endIcon={<ArrowForward />}>Our Courses</Button>

@@ -60,7 +60,10 @@ function ContactUs() {
         </Card>
       </Grid>
       <Grid item xs={12} sm={6}>
-        <img src="/autoCade.svg" height="290" width="500" />
+        <Card color="inherit" elevation={0}>
+          <img src="/autoCade.svg" height="250" />
+        </Card>
+        
       </Grid>
     </Grid>
 

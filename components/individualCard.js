@@ -12,9 +12,6 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: 80,
         backgroundColor: "#f5f5f5",
     },
-    ourCours: {
-        marginLeft: 540
-    }
 
 }));
 
@@ -207,9 +204,8 @@ function IndividualCard(props) {
     const classes = useStyles();
     return (
         <div className={classes.ourCourses}>
-            <div className={classes.ourCours}>
-
-            </div>
+          
+            
             <Grid>
                 <Grid container >
                     {courses.map((item) => (
@@ -219,8 +215,8 @@ function IndividualCard(props) {
                     ))}
                 </Grid>
             </Grid>
-        </div>
-
+       
+</div>
 
 
     )

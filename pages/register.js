@@ -11,6 +11,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import Divder from "../components/divider"
 import Layout from "../layouts/layout";
+import Head from "next/head";
 
 const useStyles = makeStyles({
   root: {
@@ -232,6 +233,10 @@ function Register() {
   return (
     <Layout>
       <div>
+         <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <title>Register</title>
+      </Head>
         <div className={classes.root}>
           <h1 style={{ textTransform: "uppercase", color: "#F2BA49", textAlign: "center" }}>Registration</h1>
           <Divder />

@@ -29,7 +29,13 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 60,
     paddingBottom: 80,
 
-    textAlign: "center"
+    textAlign: "center",
+    [theme.breakpoints.down('sm')]:{
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 20,
+    paddingBottom: 40,
+    }
   },
   ourCourses: {
     paddingLeft: 50,
@@ -37,6 +43,12 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 60,
     paddingBottom: 80,
     backgroundColor: "#f5f5f5",
+    [theme.breakpoints.down('sm')]:{
+      paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 20,
+    paddingBottom: 40,
+    }
 
   },
   onAcademy: {
@@ -44,7 +56,12 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 50,
     paddingTop: 60,
     paddingBottom: 80,
-
+[theme.breakpoints.down('sm')]:{
+      paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 20,
+    paddingBottom: 40,
+    }
 
   },
   contactUs: {
@@ -53,12 +70,23 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 40,
     paddingBottom: 80,
     backgroundColor: "#f5f5f5",
-    textAlign: "center"
+    textAlign: "center",
+    [theme.breakpoints.down('sm')]:{
+      paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 20,
+    paddingBottom: 40,
+    }
   },
-  headng: {
-
+  heading: {
+    textAlign: "center",
+    marginBottom:30,
     textTransform: "uppercase",
-    color: theme.palette.secondary.main
+    color: theme.palette.secondary.main,
+    [theme.breakpoints.down('sm')]:{
+      fontSize:'1em',
+      marginBottom:30,
+    }
   }
 }));
 
@@ -70,7 +98,7 @@ function Home() {
       <div className={classes.root}>
         <Heros />
         <div className={classes.introSection}>
-          <h1 className={classes.headng}>INTRODUCTION</h1>
+          <h1 className={classes.heading}>INTRODUCTION</h1>
           <Divider />
           <Typography variant="h6">
             Now we are in an era of computers and it is very likely that you must either learnt them as a professional course or used casually. Either ways, computers have  truely transformed the the world operates
@@ -78,16 +106,18 @@ function Home() {
         </div>
 
         <div className={classes.ourCourses}>
+          <h1 className={classes.heading}>Our Courses</h1>
+            <Divider />
           <HomeCourses />
         </div>
 
         <div className={classes.onAcademy}>
-          <h1 style={{ textTransform: "uppercase", color: "#F2BA49", textAlign: "center" }}>On Academic</h1>
+          <h1 className={classes.heading}>On Academic</h1>
           <Divider />
           <OnAcademicSection />
         </div>
         <div className={classes.contactUs}>
-          <h1 style={{ marginBottom: 20, textTransform: "uppercase", color: "#F2BA49" }}>Contact Us
+          <h1 className={classes.heading}>Contact Us
         </h1>
           <Divider />
 

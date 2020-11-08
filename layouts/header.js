@@ -8,7 +8,6 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link';
 
-
 import clsx from 'clsx';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import List from '@material-ui/core/List';
@@ -41,8 +40,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   sidebar:{
-    width: '100%',
-    backgroundColor: theme.palette.primary.main
+   
+    backgrounColor: theme.palette.primary.main
   }
 }));
 
@@ -106,7 +105,7 @@ export default function Header() {
             open={open}
             onClose={()=>setOpen(false)}
             onOpen={()=>setOpen(true)}
-            
+             className={classes.sidebar}
           >
            {list()}
           </SwipeableDrawer>
@@ -114,7 +113,7 @@ export default function Header() {
 
       <AppBar position="static">
         <Toolbar>
-          <Link href="/home">
+          <Link href="/">
             <IconButton
 
               edge="start"

@@ -5,6 +5,7 @@ import Header from "../layouts/header"
 import { Typography } from "@material-ui/core";
 import Divider from "../components/divider"
 import Layout from "../layouts/layout";
+import Head from "next/head";
 
 const useStyles = makeStyles((theme) => ({
   introSection: {
@@ -27,6 +28,10 @@ function About() {
   return (
     <Layout >
       <div>
+         <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <title>About Us</title>
+      </Head>
         <div className={classes.introSection}>
           <h1 className={classes.headng}>INTRODUCTION</h1>
           <Divider />

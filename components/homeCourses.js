@@ -9,16 +9,9 @@ import Divider from "../components/divider"
 const useStyles = makeStyles((theme) => ({
     btnMore: {
         marginTop: 30,
-        // display: "flex",
-        // alignItems: "center",
         textAlign: "center"
 
     },
-    heading: {
-        color: theme.palette.secondary.main,
-        textAlign: "center",
-        textTransform: "uppercase"
-    }
 }));
 
 const courses = [
@@ -53,8 +46,6 @@ function HomeCourses(props) {
     const classes = useStyles()
     return (
         <Grid>
-            <h1 className={classes.heading}>Our Courses</h1>
-            <Divider />
             <Grid container >
                 {courses.map((item) => (
                     <Grid item xs={12} sm={4} key={item.courseName}>
