@@ -233,10 +233,10 @@ function Register() {
   return (
     <Layout>
       <div>
-         <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <title>Register</title>
-      </Head>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+          <title>Register</title>
+        </Head>
         <div className={classes.root}>
           <h1 style={{ textTransform: "uppercase", color: "#F2BA49", textAlign: "center" }}>Registration</h1>
           <Divder />
@@ -244,20 +244,20 @@ function Register() {
             <Grid item xs={12} sm={6}>
               <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
 
-                <img src="/hero1.svg" height="350" />
+                <img src="/hero1.svg" height="350" alt="hero1.svg" />
               </div>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Card className={classes.formCard} elevation={0}>
                 <Grid container>
                   <Grid item xs={12} sm={12}>
-                    <TextField label="Full Name"  variant="outlined" fullWidth />
+                    <TextField label="Full Name" variant="outlined" fullWidth />
                   </Grid>
                   <Grid item xs={12} sm={12}>
-                    <TextField label="Email"  variant="outlined" fullWidth className={classes.TextField} />
+                    <TextField label="Email" variant="outlined" fullWidth className={classes.TextField} />
                   </Grid>
                   <Grid item xs={12} sm={12}>
-                    <TextField label="Mobile"  variant="outlined" fullWidth />
+                    <TextField label="Mobile" variant="outlined" fullWidth />
                   </Grid>
                   <Grid item xs={12} sm={12}>
                     <TextField
